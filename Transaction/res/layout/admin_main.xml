@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#708090"
+        android:gravity="center_horizontal"
+        android:text="管理者"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/admin_personal_setting"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="个人设置"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/admin_user_operate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="用户操作"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/admin_goods_operate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="商品操作"
+        android:textSize="20dp" />
+        <Button
+        android:id="@+id/admin_quit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#dc143c"
+        android:text="退出"
+        android:textSize="20dp" />
+
+</LinearLayout>

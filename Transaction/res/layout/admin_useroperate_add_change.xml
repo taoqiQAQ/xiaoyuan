@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#708090" >
+
+        <Button
+            android:id="@+id/useroperate_add_change_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="用户信息"
+            android:textSize="20dp" />
+         <Button
+            android:id="@+id/useroperate_add_change_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+      <TextView
+          android:id="@+id/user_select_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:padding="20dp"
+        android:textSize="25dp"
+        android:text="用户类型" />
+     <RadioGroup
+        android:id="@+id/useroperate_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <RadioButton
+            android:id="@+id/useroperate_type_publisher"
+            android:checked="true"
+            android:text="商品发布者" />
+
+        <RadioButton
+            android:id="@+id/useroperate_type_common"
+            android:text="普通用户" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="账号："
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/useroperate_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="请输入账号"
+            android:lines="1" />
+    </LinearLayout>
+       
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="密码："
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/useroperate_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="请输入密码"
+            android:lines="1"
+            android:password="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/useroperate_password_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="密码："
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/useroperate_password_again"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="请再次输入密码"
+            android:lines="1"
+            android:password="true" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="用户名："
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/useroperate_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="请输入用户名"
+            android:lines="1" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/useroperate_contact_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="联系方式："
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/useroperate_contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="请输入联系方式"
+            android:lines="1" />
+    </LinearLayout>
+    <Button 
+        android:id="@+id/useroperate_sure"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"/>
+    </LinearLayout>

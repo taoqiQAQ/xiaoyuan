@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#555">
+        <TextView
+            android:paddingTop="5dp"
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="商品发布者"
+            android:textColor="#fff"
+            android:textSize="25dp" />
+    </RelativeLayout>
+     <Button
+        android:id="@+id/publish_setting"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="个人设置"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/publish_product"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="商品"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/publish_quit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#dc143c"
+        android:text="注销"
+        android:textSize="20dp" />
+
+</LinearLayout>

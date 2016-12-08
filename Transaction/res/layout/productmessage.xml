@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#555">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topbackp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="商品信息"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+	        <TextView
+	            android:layout_weight="1"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:text="名称："
+	            android:gravity="center"
+	            android:textSize="20dp" />
+	       <TextView
+	           android:id="@+id/name"
+	            android:layout_weight="4"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:textSize="20dp" />
+   		 </LinearLayout>
+   		<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+	        <TextView
+	            android:layout_weight="1"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:text="价格："
+	            android:gravity="center"
+	            android:textSize="20dp" />
+	       <TextView
+	           android:id="@+id/price"
+	            android:layout_weight="4"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:textSize="20dp" />
+   		 </LinearLayout> 
+   		 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+	        <TextView
+	            android:layout_weight="1"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:text="描述："
+	            android:gravity="center"
+	            android:textSize="20dp" />
+	       <TextView
+	           android:id="@+id/introduce"
+	            android:layout_weight="4"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:textSize="20dp" />
+   		 </LinearLayout>
+   		 <Button
+            android:id="@+id/buy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="购买"
+            android:textSize="20dp" />
+   		  <Button
+            android:id="@+id/connectWay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="商家联系方式"
+            android:textSize="20dp" />
+</LinearLayout>

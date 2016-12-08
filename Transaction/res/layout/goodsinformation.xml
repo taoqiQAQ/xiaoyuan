@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#708090" >
+
+        <Button
+            android:id="@+id/goodsoperate_add_change_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="商品信息"
+            android:textSize="20dp" />
+         <Button
+            android:id="@+id/goodsoperate_add_change_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true" />
+          <Spinner 
+              android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+              />
+    </RelativeLayout>
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="商品名称："
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/goodsoperate_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="请商品名称"
+            android:lines="1" />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="商品价格："
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/goodsoperate_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:inputType="number"
+            android:hint="请输入商品价格"
+            android:lines="1" />
+    </LinearLayout>
+ 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品描述："
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/goodsoperate_describe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入商品描述"
+            android:lines="4" />
+        <Button 
+            android:id="@+id/goodsoperate_sure"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textSize="15dp"
+            android:layout_gravity="center_horizontal"/>
+   
+    </LinearLayout>
